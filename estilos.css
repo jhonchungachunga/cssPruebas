@@ -1,0 +1,261 @@
+body {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    
+}
+    /*background-color:rgb(247, 247, 247);
+    }
+}
+/*
+.caja{
+    box-sizing:border-box;
+    
+}
+.caja1{
+    box-sizing:content-box;
+}
+.caja , .caja1{
+    text-align: center;
+    float: left;
+    display: inline;
+    border-radius:  .1rem .1rem .1rem .1rem;
+    margin: .2rem;
+    padding: 1rem;
+    font-family: Arial,sans-serif;
+    font-size: 1rem;
+    border: 1px solid   rgb(242, 242, 242)   ;
+    word-wrap:break-word;
+    
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    
+}
+
+.textoGris{
+  color: rgb(140, 140, 140);  
+}
+
+.cajaRed{
+    
+    padding: .5rem;
+    
+    background-color: red;
+    color: white;
+}
+
+.cajaAzul{
+  
+    padding: .5rem;
+    display: inline-block;
+    background-color: blue;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+
+
+.iconos{
+   
+    max-width: 1.7rem;
+}
+*/
+
+
+/*animaciones en css*/
+
+
+.imagen{
+    max-width: 3rem;
+}
+/*caja que contiene las imagenes en movimiento*/
+.caja_contenedora{
+   width: 200px;
+   height: 200px;
+   display: block;
+   width: 200px;
+   height:200px; 
+   margin: 0px auto;
+   position: relative;
+}
+/*animacion hacia arriba*/
+.girando_desde_centro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation-name: girando_desde_centro;
+    animation-timing-function:linear;
+    animation-delay: 0s; /* tiempo de espera para ejecutar la animacion*/
+    animation-duration: 5s; /*duracion de la animacion*/
+    animation-direction:normal; /*direccion de la animacion*/
+    animation-iteration-count:infinite; /*cuantas veces se ejecuta la animacion*/
+}
+
+@keyframes girando_desde_centro{
+    0%{
+ transform:translate(-50%,-50%) rotate(0deg);
+    }
+   
+     100%{
+transform:translate(-50%,-50%) rotate(365deg);
+    }
+}
+
+/*animacion hacia arriba*/
+.cuadrado{
+    position:absolute;
+    top: 50%;
+    left: 75%;
+    transform-origin: -100% 0 ;
+    animation-name: cuadrado;
+    animation-timing-function:ease-out;
+    animation-delay: 0s; /* tiempo de espera para ejecutar la animacion*/
+    animation-duration: 5s; /*duracion de la animacion*/
+    animation-direction:normal; /*direccion de la animacion*/
+    animation-iteration-count:infinite; /*cuantas veces se ejecuta la animacion*/
+}
+
+@keyframes cuadrado{
+    0%{
+    transform: rotate(365deg) ;
+    }
+    50%{
+    transform: rotate(-365deg) ;
+    }
+    100%{
+  transform:rotate(0deg) ;
+
+    }
+    
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+/*transiciones*/
+.container{
+  position: relative;
+}
+.caja{
+  width: 180px;
+  height: 180px;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+}
+.caja1{
+  background-color: #C0392B;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja1:hover{
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+}
+.caja2{
+  background-color: #9B59B6;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja2:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.caja3{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #2980B9;
+}
+.caja3:hover{
+  -webkit-transform: translate(10%);
+  transform: translate(10%);
+}
+.caja4{
+  background-color: #3498DB;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja4:hover{
+  -webkit-transform: skew(10deg);
+  transform: skew(10deg);
+}
+.caja5{
+  background-color: #17A589;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja5:hover{
+  -webkit-transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+.caja6{
+  background-color: #F1C40F;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+.caja6:hover{
+  -webkit-transform: skewX(-5deg);
+  transform: skewX(-5deg);
+}
+.caja7{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #E67E22;
+}
+.caja7:hover{
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.caja8{
+
+  -webkit-transition: 1s linear;
+
+  transition: 1s linear;
+  background-color: #95A5A6;
+}
+.caja8:hover{
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
+.caja9{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #2C3E50;
+}
+.caja9:hover{
+  -webkit-transform: perspective(150px) rotateX(45deg);
+  transform: perspective(150px) rotateX(45deg);
+}
+.caja10{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: grey;
+}
+.caja10:hover{
+  -webkit-transform: perspective(150px) rotateY(45deg);
+  transform: perspective(150px) rotateY(45deg);
+}
+.caja11{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: black;
+}
+.caja11:hover{
+  -webkit-transform: matrix(0.5, 0.1, 0.5,1,10, -2);
+  transform: matrix(0.5, 0.1, 0.5, 1, 10, -2);
+}

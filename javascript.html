@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script>
+                    function textoReversa(){
+                    var miTexto= document.getElementById('cajaReversa').value;
+                    var cont=miTexto.length-1;
+                    var cadena='';
+
+                    for(var i=cont;i>=0;i--){
+                        cadena+=miTexto[i];
+                        
+                    }
+
+                    document.getElementById('mensaje').innerHTML=cadena;
+                    }
+
+                    function addElemento(palabra,arreglo){
+                    arreglo.push(palabra);
+                    return arreglo;    
+                    document.getElementById('mensaje').innerHTML=JSON.stringify(arreglo);
+                    }
+
+
+    </script>
+    <title>Document</title>
+    
+</head>
+<body>
+    
+</body>
+
+<section class=".container-fluid">
+    <h1>texto en reversa</h1>
+        <section id="mensaje">
+
+        </section>
+        <input type="text" name="" id="cajaReversa" class="form-control form-control-lg">
+
+        <input type="button" value="convertir" onclick="textoReversa()">
+    <br>
+    <input type="text" name="" id="cajaArray" class="form-control form-control-lg">
+    <input type="button" value="agregarPalabre" onclick="addElemento()">
+</section>
+</html>
